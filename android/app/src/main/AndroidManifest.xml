@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.kd.flutcalculator">
     <application
-        android:label="Flutcalculator"
+        android:label="flutcalculator"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="flutterEmbedding" android:value="2"/>
         <activity
@@ -14,8 +13,8 @@
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>

@@ -1,15 +1,26 @@
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
-apply from:-Statestoremages(f"..\\\\.flutter-plugins")
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
 
 android {
-    compileSdkVersion = 33
-    namespace 'com.kd.flutcalculator'
+    namespace = "com.kd.flutcalculator"
+    compileSdk = 34
     defaultConfig {
-        applicationId "com.kd.flutcalculator"
-        minSdkVersion 23
-        targetSdkVersion 33
-        versionCode 1
-        versionName "1.0"
-        multiDexEnabled true
-        manifestPlaceholders = [enableCrashlytics: false]
+        applicationId = "com.kd.flutcalculator"
+        minSdk = 21
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0.0"
+    }
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
