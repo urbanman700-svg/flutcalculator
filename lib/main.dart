@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -38,7 +38,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     } else if (button == '=' ) {
       try {
         _result = _calculate(_expression);
-       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!_saveHistory(_expression + ' = ' + _result);
+ _saveHistory(_expression + ' = ' + _result);
       } catch (e) {
         _result = 'Error';
       }
@@ -108,7 +108,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
         title: Text('Calculator'),
         actions: [
           IconButton(
-            icon: Icon(_isDarkTheme ? Icons.wb_sunny : Icons.n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Iron),
+            icon: Icon(_isDarkTheme ? Icons.wb_sunny : Icon. Iron),
             onPressed: _toggleTheme,
           ),
         ],
